@@ -64,7 +64,7 @@ public class PersonService {
 
 	public Map<String, String> remove(@PathVariable String name) {
 		Map<String, String> result = new HashMap<>();
-		boolean isSucess = listOfPersons.removeIf((element) -> element.getName().equalsIgnoreCase(name));
+		boolean isSucess = listOfPersons.removeIf(element -> element.getName().equalsIgnoreCase(name));
 		if (isSucess) {
 			result.put(RESULT2, "Pessoa removida com sucesso.");
 		} else {
