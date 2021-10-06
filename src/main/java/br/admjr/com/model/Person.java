@@ -10,7 +10,7 @@ public class Person {
 		this.name = name;
 		this.lastName = lastName;
 		this.birthDay = birthDay;
-		this.email = email; // TODO Auto-generated constructor stub
+		this.email = email;
 	}
 
 	public String getName() {
